@@ -1,0 +1,224 @@
+/*General*/
+
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(235, 230, 218);
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+/*Nav Bar*/
+
+ul{
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1.5em;
+  background-color: rgb(235, 230, 218);
+  text-align: right;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  padding: 1em;
+  text-decoration: none;
+  font-size: 2em;
+  color: #588157;
+}
+
+
+
+/*Home Section*/
+
+#intro-title {
+  margin-bottom:0.5em;
+  font-size: 3.5rem;
+}
+
+@keyframes bounce { 
+  from { transform: translateY(0); } 
+  to { transform: translateY(-10px); } 
+}
+
+#home-img {
+  width: 40%;
+  height: 40%;
+  margin-top: 4em;
+  margin-right: 8em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+  animation: bounce 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.left-side {
+  color:#588157;
+  margin-top: 1em;
+  margin-left: 7em;
+  margin-right: 2em;
+
+}
+
+@keyframes nav-link-hover {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.nav-link:hover {
+  animation: nav-link-hover 0.5s forwards;
+}
+
+/*Learn Section*/
+
+.causes-title {
+  color: #588157;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.what {
+  color: #588157;
+}
+
+.how {
+    color: #588157;
+    font-family: "Gilmer Regular";
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-right: 8em;
+    margin-left: 8em;
+    background-color: rgba(255, 255, 255, 0.849);
+    transition: box-shadow .3s ease;
+    justify-content: top;
+    box-shadow: 0 2px 4px 0 rgba(190, 112, 112, 0.05), 0 3px 10px 0 rgba(190, 112, 112, 0.05);
+}
+
+.block:hover, #about-block:hover {
+    box-shadow: 0px 0px 10px rgba(74, 190, 138, 0.51);
+  }
+
+.causes-title {
+    color: #588157;
+    font-family: "Gilmer Bold";
+    font-size: 2rem;
+    margin-top: 3em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.cause-pic {
+    width: 273px;
+    height: 183px;
+    border-radius: 30px;
+    margin-right: 3em;
+}
+
+.cause-pic:hover {
+    box-shadow: 0px 0px 20px rgba(238, 255, 247, 0.89);
+    transform: rotate(5deg) scale(1.01);
+    transition: 0.3s ease;
+  }
+
+.cause-img-label {
+    color:#588157;
+    font-family: "Gilmer Regular";
+    text-align: center;
+    margin-top: 0.5em;
+    margin-right: 3em;
+}
+
+#learn {
+    padding-top: 1em;
+}
+ /* TAKE ACTION SECTION */
+
+ .take-action {
+    width: 70%;
+    justify-content: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 13%;
+
+  }
+
+ .subtitle {
+    font-size: 3rem;
+    font-family: "Gilmer Bold";
+    color: #588157;
+    margin-bottom: 0.7em;
+ }
+ 
+ .action-title {
+    font-size: 1.8rem;
+    font-family: "Gilmer Bold";
+    color: #588157;
+ }
+ #action-img {
+    height: 100%;
+    width: 100%;
+    margin-left: -2em;
+ }
+
+#action-img:hover {
+    transform: scale(1.08);
+    transition: 0.3s ease;
+ }
+
+ .right-side {
+   color: #588157;
+   margin-top: 1em;
+   margin-left: 8em;
+   font-family: "Gilmer Regular";
+ }
+
+ .action-step {
+    font-family: "Gilmer Bold";
+    width: 200%;
+    font-size: 1.5rem;
+
+ }
+
+ .action-desc {
+    /*width: 200%;*/
+    margin-right: -10em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+ }
+
+ @media screen and (max-width: 1080px) {
+    .take-action {
+        display: block;
+    }
+  }
